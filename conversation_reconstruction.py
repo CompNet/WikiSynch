@@ -29,10 +29,23 @@ class message():
         return msg
 
 '''
-Reconstruct all conversations from pages containing labeled messages.
-Filter all the reconstructed conversations to retain only those containing a targeted message.
-'''
+Combination of step 4 and 5 of the reconstruction pipeline.
 
+
+Reconstruct all conversations from pages containing annotated comments. When several comments have the same rev_id, compute the LCS to determine the actual
+annotated comment. One comment is retained and the others have their rev_id modified (add 0 at the end) to ensure that annotated rev_id are unique.
+Filter all the reconstructed conversations to retain only those containing an annotated comment.
+Conversations are structured and rev_id of annotated comments are unique in the output files.
+
+IN:
+    - annotated_abusetype.csv: Files generated at step 1. Used to list all rev_id we have to retain and the textual content of each annotated comment in WCC.
+    - talk_pages/*: files generated at previous step containing all the actions of the pages containing an annotated comment grouped by page. 
+
+OUT:
+    - conversations/revid_conversation.txt: 1 file per annotated comment. Contains the structured conversation in which the annotated comment was posted. 
+    885_conversation.txt contains the conversation of comment with rev_id 885. Rev_id of annotated comments are unique in these files. 
+
+'''
 
 
 def load_annotated_comments():

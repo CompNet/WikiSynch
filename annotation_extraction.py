@@ -13,7 +13,7 @@ IN:
 	- WCC/*.csv: files generated from the WCC data. 1 file per page containing at least 1 annotated comment. 
 	WCC/xx.csv contains all the messages posted on the xx page (in the WCC data).
 	Attributes are: rev_id, comment, cleaned_comment, timestamp, conv_id, conv_name, author_id, author name, bot, admin
-	When the author was not logged in, author_id is missing and author nam is its ip address. 
+	When the author was not logged in, author_id is missing and author name is its ip address. 
 
 OUT:
 	- annotated_abusetype.csv: files containing all the available annotated comments from the 3 WCC datasets and their gold annotations.
