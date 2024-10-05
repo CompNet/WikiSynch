@@ -1,6 +1,6 @@
 Wikipedia Abusive Conversations
 ===================
-*Corpus of Wikipedia conversations annotated for abuse*
+*Synchronization between two Wikipedia-based Corpora*
 
 * Copyright 2019-2020 Noé Cécillon
 
