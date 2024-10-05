@@ -1,6 +1,6 @@
 Wikipedia Abusive Conversations
 ===================
-*Pattern-Based Anomaly Detection in Graphs*
+*Corpus of Wikipedia conversations annotated for abuse*
 
 * Copyright 2019-2020 Noé Cécillon
 
